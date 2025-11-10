@@ -6,14 +6,62 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		75D25C102EC14C8D0095DAF2 /* JPAexPredatorsStickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 75D25C092EC14C8C0095DAF2 /* JPAexPredatorsStickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75D25C0E2EC14C8D0095DAF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D25BB92EC0D18B0095DAF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75D25C082EC14C8C0095DAF2;
+			remoteInfo = JPAexPredatorsStickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75D25C062EC14C1C0095DAF2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				75D25C102EC14C8D0095DAF2 /* JPAexPredatorsStickers.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		75D25BC12EC0D18B0095DAF2 /* JPApexPredators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPApexPredators.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D25BEF2EC14C190095DAF2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		75D25C092EC14C8C0095DAF2 /* JPAexPredatorsStickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JPAexPredatorsStickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		75D25C112EC14C8D0095DAF2 /* Exceptions for "JPAexPredatorsStickers" folder in "JPAexPredatorsStickers" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 75D25C082EC14C8C0095DAF2 /* JPAexPredatorsStickers */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		75D25BC32EC0D18B0095DAF2 /* JPApexPredators */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = JPApexPredators;
+			sourceTree = "<group>";
+		};
+		75D25C0A2EC14C8C0095DAF2 /* JPAexPredatorsStickers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				75D25C112EC14C8D0095DAF2 /* Exceptions for "JPAexPredatorsStickers" folder in "JPAexPredatorsStickers" target */,
+			);
+			path = JPAexPredatorsStickers;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				75D25BC32EC0D18B0095DAF2 /* JPApexPredators */,
+				75D25C0A2EC14C8C0095DAF2 /* JPAexPredatorsStickers */,
+				75D25BEC2EC14C190095DAF2 /* Frameworks */,
 				75D25BC22EC0D18B0095DAF2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +91,17 @@
 			isa = PBXGroup;
 			children = (
 				75D25BC12EC0D18B0095DAF2 /* JPApexPredators.app */,
+				75D25C092EC14C8C0095DAF2 /* JPAexPredatorsStickers.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		75D25BEC2EC14C190095DAF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75D25BEF2EC14C190095DAF2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +114,12 @@
 				75D25BBD2EC0D18B0095DAF2 /* Sources */,
 				75D25BBE2EC0D18B0095DAF2 /* Frameworks */,
 				75D25BBF2EC0D18B0095DAF2 /* Resources */,
+				75D25C062EC14C1C0095DAF2 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				75D25C0F2EC14C8D0095DAF2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				75D25BC32EC0D18B0095DAF2 /* JPApexPredators */,
@@ -69,6 +130,26 @@
 			productName = JPApexPredators;
 			productReference = 75D25BC12EC0D18B0095DAF2 /* JPApexPredators.app */;
 			productType = "com.apple.product-type.application";
+		};
+		75D25C082EC14C8C0095DAF2 /* JPAexPredatorsStickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75D25C122EC14C8D0095DAF2 /* Build configuration list for PBXNativeTarget "JPAexPredatorsStickers" */;
+			buildPhases = (
+				75D25C072EC14C8C0095DAF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				75D25C0A2EC14C8C0095DAF2 /* JPAexPredatorsStickers */,
+			);
+			name = JPAexPredatorsStickers;
+			packageProductDependencies = (
+			);
+			productName = JPAexPredatorsStickers;
+			productReference = 75D25C092EC14C8C0095DAF2 /* JPAexPredatorsStickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +162,9 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					75D25BC02EC0D18B0095DAF2 = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					75D25C082EC14C8C0095DAF2 = {
 						CreatedOnToolsVersion = 26.1;
 					};
 				};
@@ -100,12 +184,20 @@
 			projectRoot = "";
 			targets = (
 				75D25BC02EC0D18B0095DAF2 /* JPApexPredators */,
+				75D25C082EC14C8C0095DAF2 /* JPAexPredatorsStickers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		75D25BBF2EC0D18B0095DAF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75D25C072EC14C8C0095DAF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,6 +215,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75D25C0F2EC14C8D0095DAF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75D25C082EC14C8C0095DAF2 /* JPAexPredatorsStickers */;
+			targetProxy = 75D25C0E2EC14C8D0095DAF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		75D25BCA2EC0D18D0095DAF2 /* Debug */ = {
@@ -256,8 +356,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -270,7 +370,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -287,8 +387,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,7 +401,45 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75D25C132EC14C8D0095DAF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JPAexPredatorsStickers/Info.plist;
+				INFOPLIST_KEY_NSStickerSharingLevel = OS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yakov.haimoff.JPApexPredators.JPAexPredatorsStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75D25C142EC14C8D0095DAF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JPAexPredatorsStickers/Info.plist;
+				INFOPLIST_KEY_NSStickerSharingLevel = OS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yakov.haimoff.JPApexPredators.JPAexPredatorsStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -323,6 +461,15 @@
 			buildConfigurations = (
 				75D25BCD2EC0D18D0095DAF2 /* Debug */,
 				75D25BCE2EC0D18D0095DAF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75D25C122EC14C8D0095DAF2 /* Build configuration list for PBXNativeTarget "JPAexPredatorsStickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D25C132EC14C8D0095DAF2 /* Debug */,
+				75D25C142EC14C8D0095DAF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
